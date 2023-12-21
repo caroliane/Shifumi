@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifumi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Shifumi</h1>
+    <div id="game-container">
+        <div id="choices">
+            <button onclick="playGame('pierre')">Pierre</button>
+            <button onclick="playGame('papier')">Papier</button>
+            <button onclick="playGame('ciseaux')">Ciseaux</button>
+        </div>
+        <div id="computer-choice"></div>
+        <div id="result"></div>
+        <div id="score">Points : Joueur <span id="Pointsjoueur">0</span>, Ordinateur <span id="Pointsordinateur">0</span></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
